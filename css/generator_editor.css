@@ -1,0 +1,552 @@
+/* VARIABLES */
+
+/* APP CONTROLS CSS */
+
+#div_wrapper_tabs{
+    width: min-content;
+    margin:auto;
+    margin-top: 25px;
+    display:flex;
+    justify-content: center;
+}
+
+.button_tab{
+    margin:5px;
+    text-transform: uppercase;
+    font-size: large;
+    font-weight: bold;
+
+    width: 15rem;
+}
+
+/* GENERATOR CSS */
+
+/* Global container class (generator or editor) */
+
+.div_app_container{
+    box-sizing: content-box;
+
+    max-width: 960px;
+    margin: auto;
+    margin-top: 10px;
+}
+
+
+/* Global generator controls */
+
+#div_wrapper_generator_controls{
+    margin: 30px 0px;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+#button_generate{
+    margin:auto;
+    text-transform:uppercase;
+    font-size: large;
+}
+
+/* Results */
+
+#div_wrapper_result_boxes{
+    box-sizing: content-box;
+    
+    margin: auto;
+    margin-bottom: 2px;
+    margin-top: 2px;
+
+    min-height: 120px;
+
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+
+}
+
+/* Result boxes */
+.div_result_box{
+    box-sizing: content-box;
+
+    margin:5px;
+    padding:5px;
+    width:280px;
+
+    min-height: 120px;
+    max-height: 240px;
+    background-color: var(--color-blue-gray-500);
+    color: var(--color-blue-gray-light-accent);
+}
+
+/*Result titles*/
+.div_result_title{
+    margin:5px 0px;
+    text-transform:uppercase;
+    text-align:center;
+}
+
+/* Results*/
+.div_result{
+    padding: 3px;
+    margin: 5px 0px 0px auto;
+    white-space: pre-wrap;
+    text-align: justify;
+
+    max-height: 200px;
+    overflow: auto;
+}
+
+/* TEMPLATES */
+
+/* Wrapper */
+
+#div_wrapper_templates{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+}
+
+/* Template */
+
+/* Wrapper - Template Controls */
+
+.div_wrapper_template_controls{
+    margin:auto;
+    margin-top: 3px;
+    margin-bottom: 3px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.select_template{
+    margin:auto;
+    margin-top: 3px;
+    margin-bottom: 3px;
+
+    width: 200px;
+}
+
+.select_template_settings{
+    margin:auto;
+    margin-top: 3px;
+    margin-bottom: 3px;
+
+    width: 200px;
+}
+
+/* Wrapper - Template - buttons */
+
+.div_wrapper_template_buttons{
+    margin:auto;
+    margin-top: 3px;
+    margin-bottom: 3px;
+}
+
+#button_generate{
+    margin:auto;
+    min-width:8em;
+    max-width:16em;
+}
+
+/* Wrapper - Templates */
+
+#div_wrapper_templates{
+
+    display:flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+/* Template */
+
+[class^="div_template_id"] {
+    /* Outside */
+    margin: 5px;
+    
+    /* Border */
+    /* border: 3px solid;
+    border-color: var(--color-main); */
+    width: min-content;
+    padding: 4px;
+
+    /* Inside */
+
+    background-color: var(--color-blue-gray-500);
+    color: var(--color-blue-gray-light-accent);
+
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+}
+
+.div_template_title {
+    margin: 5px;
+
+    text-transform:uppercase;
+    text-align: center;
+}
+
+.div_wrapper_change_template_controls{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.div_wrapper_change_template_buttons{
+    display: flex;
+    justify-content: center;
+}
+/* Categories */
+
+.div_wrapper_category{
+    margin: 2px auto;
+
+    width: max-content;
+    max-width: 846px;
+
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    
+    background-color: var(--color-blue-gray-300);
+}
+
+[class^="div_category_id_"] {
+    margin: 3px;
+    padding: 3px;
+    width: 270px;
+
+    background-color: var(--color-blue-gray-600);
+    color: var(--color-blue-gray-light-accent);
+}
+
+[class^="div_category_id_"]:nth-child(3n) {
+    page-break-after: always; /* CSS 2.1 syntax */
+    break-after: always; /* New syntax */
+  }
+
+.div_category_title {
+    margin: 7px;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.div_wrapper_control_category{
+    margin: 3px;
+
+    display: flex;
+    justify-content: center;
+    align-content: center;
+}
+
+.div_wrapper_category_title_select{
+    display: flex;
+    justify-content: center;
+}
+
+.select_category{
+    margin: 3px auto;
+    text-transform: uppercase;
+}
+
+.option_select_category{
+    text-transform: uppercase;
+}
+
+.div_wrapper_elements{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.div_random_number_wrapper{
+    padding: 3px;
+}
+
+.div_random_number_wrapper div{
+    margin: 3px;
+}
+.select_element{
+    margin: auto;
+    width: 99%;
+}
+
+.input_number{
+    margin: 3px;
+}
+
+
+/* EDITOR CSS */
+
+/* Warning Guest */
+
+#div_wrapper_warning_guest{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#div_warning_guest_title{
+    width: 360px;
+    margin: 10px 10px 0px 10px;
+
+    padding: 10px;
+    background-color: var(--color-blue-gray-700);
+
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: 600;
+    
+}
+
+#div_warning_guest{
+    background-color: var(--color-blue-gray-500);
+    width: 360px;
+    text-align: justify;
+    margin: 0px 10px 10px 10px;
+    padding: 10px;
+}
+
+#div_wrapper_account_links{
+
+    width: 360px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.a_account{
+    background-color: var(--color-blue-gray-800);
+    color: var(--color-blue-gray-light-accent);
+    vertical-align: middle;
+    text-align: center;
+    text-decoration: none;
+    padding: 14px 16px;
+    margin: 5px;
+    width: calc(50% - 10px);
+}
+
+.a_account:hover {
+    background-color: var(--color-blue-gray-600);
+    color: var(--color-blue-gray-light-accent);
+  }
+
+/* Editor */
+
+#div_editor_wrapper_controls{
+    display:flex;
+    flex-direction: row;
+    justify-content: center;
+
+    margin-top: 5px;
+
+    background-color: var(--color-blue-gray-600);
+}
+
+.button_editor_main_control{
+    margin: 3px;
+}
+
+#div_editor_wrapper_columns{
+
+    margin-top: 5px;
+
+    width: 100%;
+
+    display:grid;
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 5px;
+}
+
+/* Left column */
+
+#div_editor_wrapper_left_column{
+    grid-column: 1;
+    grid-row: 1;
+
+    height: min-content;
+
+    padding: 5px;
+
+    background-color: var(--color-blue-gray-600);
+    color: var(--color-blue-gray-light-accent);
+}
+
+#div_editor_wrapper_template_title{
+    position: relative;
+
+    height: 2.2rem;
+    display:flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+#div_editor_template_title{
+    display: inline;
+
+
+    margin-left: 10px;
+    margin-right: 10px;
+
+    vertical-align: middle;
+
+    font-weight: 600;
+    text-align: center;
+    text-transform: uppercase;
+    
+}
+
+
+#button_editor_template_title_edit{
+    position: absolute;
+    top:0px;
+    right:0px;
+}
+
+
+#div_editor_wrapper_outline{
+    width: 100%;
+}
+
+#div_editor_outline{
+    padding: 4px;
+
+    text-align: center;
+    text-transform: uppercase;
+}
+
+/* Category */
+
+#div_editor_wrapper_categories{
+    padding-top:1px;
+    padding-bottom: 1px;
+    background-color: var(--color-blue-gray-200);
+}
+
+.div_editor_wrapper_category{
+    padding: 3px;
+    margin: 3px;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+
+    background-color: var(--color-blue-gray-400);
+}
+
+/* Category title */
+
+.div_editor_outline_category_title{
+    margin-left: 5px;
+}
+
+/* Category controls */
+
+.div_editor_outline_category_controls{
+    display:flex;
+    flex-direction: row;
+}
+
+.div_editor_outline_category_controls button{
+    margin-left: 2px;
+    margin-right: 2px;
+}
+
+/* Add category button */
+
+#div_editor_wrapper_button_add_category{
+    margin-top: 5px;
+    padding: 3px;
+}
+
+/* Right column */
+
+#div_editor_wrapper_right_column{
+    grid-column: 2;
+    grid-row: 1;
+
+    padding: 5px;
+
+    background-color: var(--color-blue-gray-400);
+    color: var(--color-blue-gray-light-accent);
+}
+
+#div_editor_wrapper_category_title{
+    position: relative;
+
+    height: 2.2rem;
+    display:flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+#button_editor_category_title_edit{
+    position: absolute;
+    top:0px;
+    right:0px;
+}
+
+#div_editor_category_title{
+    display: inline;
+
+    margin-left: 10px;
+    margin-right: 10px;
+
+    vertical-align: middle;
+
+    text-align: center;
+    text-transform: uppercase;
+}
+
+#div_editor_wrapper_category_options{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 4px;
+}
+
+#label_select_editor_category_type{
+    margin: 2px;
+}
+
+#div_editor_wrapper_elements{
+    padding:1px;
+
+    background-color: var(--color-blue-gray-200);
+
+    display:flex;
+    flex-direction: column;
+}
+
+#div_editor_wrapper_elements input{
+    max-width: 30%;
+}
+
+.div_editor_wrapper_element{
+    margin: 2px;
+    padding: 2px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+    background-color: var(--color-blue-gray-300);
+}
+
+.div_editor_element_controls_wrapper{
+    display:flex;
+    flex-direction: row;
+}
+
+.div_editor_element_controls_wrapper > button{
+    margin-left: 2px;
+    margin-right: 2px;
+}

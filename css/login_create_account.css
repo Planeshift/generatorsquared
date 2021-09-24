@@ -1,0 +1,56 @@
+/* LOGIN && CREATE ACCOUNT CSS */
+
+.wrapper_form{
+    margin:auto;
+    display:flex;
+    justify-content: center;
+    flex-direction: column;
+    max-width:240px;
+}
+
+.div_form_result_message{
+    text-align: center;
+    font-weight: 600;
+}
+
+.wrapper_form div, label{
+    margin-top:5px;
+    margin-bottom:5px;
+}
+
+.wrapper_input_warning{
+    margin:auto;
+    display:flex;
+    justify-content: center;
+    flex-direction: column;
+    width: 100%;
+    max-width:240px;
+}
+
+#button_submit{
+    margin-top: 20px;
+}
+
+#div_create_account{
+    margin:auto;
+    max-width:240px;
+    text-align:center;
+}
+
+#div_create_account p{
+    padding:4px;
+}
+
+#a_create_account{
+    background-color: var(--color-blue-gray-800);
+    color: var(--color-blue-gray-light-accent);
+    text-align: center;
+    text-decoration: none;
+    padding: 14px 16px;
+}
+
+#a_create_account:hover {
+    background-color: var(--color-blue-gray-600);
+    color: var(--color-blue-gray-light-accent);
+  }
+

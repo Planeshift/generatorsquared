@@ -1,0 +1,22 @@
+
+/* ABOUT CSS */
+
+h1{
+    margin-left: 20px;
+    color: var(--color-blue-gray-light-accent);
+    font-size: larger;
+}
+
+h2{
+    margin-left: 20px;
+    color: var(--color-blue-gray-light-accent);
+    font-size: large;
+}
+
+a{
+    color: var(--color-blue-gray-light-accent);
+}
+
+a:visited{
+    color: var(--color-blue-gray-light-accent);
+}

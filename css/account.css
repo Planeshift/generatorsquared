@@ -1,0 +1,207 @@
+
+/* MAIN ACCOUNT CSS */
+
+/* Welcome User */
+
+#div_main_content_wrapper{
+    background-color: unset;
+}
+
+#div_welcome_user{
+    display: flex;
+    justify-content: center;
+}
+
+#span_welcome_user{
+    padding: 10px 10px 10px;
+
+    font-size: larger;
+
+    background-color: var(--color-blue-gray-700);
+}
+
+#span_username{
+    font-weight: bold;
+}
+
+
+#div_account_wrapper{
+    padding:5px;
+}
+
+/* Manage your account */
+
+#div_manage_account_title{
+    display: inline-block;
+
+    padding: 5px 10px;
+    font-size: large;
+    font-weight: bold;
+
+    background-color: var(--color-blue-gray-800);
+}
+
+
+#div_manage_account_wrapper{
+    background-color: var(--color-blue-gray-800);
+    padding: 5px;
+}
+
+#div_manage_account_wrapper > div{
+    padding: 3px;
+    background-color: var(--color-blue-gray-600);
+    color: var(--color-dark-accent);
+}
+
+#div_manage_account_wrapper a{
+    font-weight: bold;
+    color: var(--color-blue-gray-light-accent);
+}
+
+#div_manage_account_wrapper a:visited{
+    font-weight: bold;
+    color: var(--color-blue-gray-light-accent);
+}
+
+
+/* Manage templates and settings */
+
+#div_manage_account_templates_and_settings_title{
+
+    margin-top: 20px;
+
+    display: inline-block;
+
+    padding: 5px 10px;
+    font-size: large;
+    font-weight: bold;
+
+    background-color: var(--color-blue-gray-800);
+}
+
+#div_manage_account_templates_and_settings_wrapper{
+    background-color: var(--color-blue-gray-800);
+    padding: 5px;
+
+    width: 100%;
+    
+    display:grid;
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 5px;
+}
+
+/* Templates */
+
+#div_account_templates_list_wrapper{
+    grid-column: 1;
+    grid-row: 1;
+
+    height: min-content;
+
+    background-color: var(--color-blue-gray-700);
+}
+
+
+#div_manage_account_templates_title{
+    padding:7px;
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+#div_account_default_template_list_title{
+    margin-left: 5px;
+    padding:5px;
+}
+
+#div_account_user_template_list_title{
+    margin-left: 5px;
+    padding:5px;
+}
+
+.div_account_template_list_wrapper{
+    padding: 5px;
+    margin: 3px;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+
+    background-color: var(--color-blue-gray-500);
+}
+
+
+.div_account_template_list_controls_wrapper{
+    display: inline-flex;
+}
+
+
+/* Settings */
+
+#div_account_template_settings_list_wrapper{
+    grid-column: 2;
+    grid-row: 1;
+
+    background-color: var(--color-blue-gray-500);
+}
+
+#div_account_template_settings_title{
+    padding: 3px;
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+.div_account_template_settings_list_big_wrapper{
+    padding: 3px;
+
+    background-color: var(--color-blue-gray-600);
+}
+
+.div_account_template_settings_list_small_wrapper{
+    padding: 3px;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+
+    background-color: var(--color-blue-gray-400);
+}
+
+.div_account_template_default_settings_view_wrapper{
+    padding: 3px;
+
+    max-height: 200px;
+    overflow: auto;
+}
+
+.div_template_setting_view_wrapper_category{
+    margin: 2px;
+
+    background-color: var(--color-blue-gray-300);
+
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+}
+
+.div_template_setting_view_wrapper_category:nth-child(3n) {
+    page-break-after: always; /* CSS 2.1 syntax */
+    break-after: always; /* New syntax */
+}
+
+.div_view_settings_category_wrapper{
+    padding:3px;
+}
+
+.div_view_settings_category_title{
+    text-align: center;
+    font-weight: 600;
+}
+
+.div_view_settings_element{
+    text-align: center;
+
+}
